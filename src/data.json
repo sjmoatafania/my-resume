@@ -1,0 +1,59 @@
+{
+    "title": "Hello I'm Jalal!",
+    "subtitle": "Full Stack Dev | Open Source Enthusiast ",
+    "links": {
+        "github": "https://github.com/s-j-mostafania",
+        "twitter": "https://twitter.com/s_j_mostafania",
+        "linkedin": "https://www.linkedin.com/in/jalal-mostafania-6ab3a69a/"
+    },
+    "sections": [
+        {
+            "title": "About",
+            "items": [
+                {
+                    "type": "p",
+                    "content": "I love to learn.I like JavaScript and everything web."
+                }
+            ]
+        },
+        {
+            "title": "Skills",
+            "items": [
+                {
+                    "type": "cart",
+                    "content": {
+                        "image": "images/react.png",
+                        "title": "React"
+                    }
+                },
+                {
+                    "type": "cart",
+                    "content": {
+                        "image": "images/javascript.png",
+                        "title": "Javascript"
+                    }
+                },
+                {
+                    "type": "cart",
+                    "content": {
+                        "image": "images/html5.png",
+                        "title": "Html"
+                    }
+                },
+                {
+                    "type": "cart",
+                    "content": {
+                        "image": "images/css3.png",
+                        "title": "Css"
+                    }
+                }
+            ]
+        }
+    ],
+    
+    "icons":{
+        "down":"images/down.png",
+        "magicwand":"images/magicwand.png"
+    }
+    
+} 

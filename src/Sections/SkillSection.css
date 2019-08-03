@@ -1,0 +1,12 @@
+.cards-wrapper{
+    display: -webkit-inline-box;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .third{
+    background-color: #e1e9ee;
+  }
+
+  

@@ -1,0 +1,97 @@
+.bounce {
+  -moz-animation: bounce 3s infinite;
+  -webkit-animation: bounce 3s infinite;
+  animation: bounce 3s infinite;
+}
+
+@-moz-keyframes bounce {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    -moz-transform: translateY(-70px);
+    transform: translateY(-70px);
+  }
+  40% {
+    -moz-transform: translateY(-60px);
+    transform: translateY(-60px);
+  }
+  60% {
+    -moz-transform: translateY(-60px);
+    transform: translateY(-60px);
+  }
+}
+@-webkit-keyframes bounce {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    -webkit-transform: translateY(-70px);
+    transform: translateY(-70px);
+  }
+  40% {
+    -webkit-transform: translateY(-60px);
+    transform: translateY(-60px);
+  }
+  60% {
+    -webkit-transform: translateY(-60px);
+    transform: translateY(-60px);
+  }
+}
+@keyframes bounce {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    -moz-transform: translateY(-70px);
+    -ms-transform: translateY(-70px);
+    -webkit-transform: translateY(-70px);
+    transform: translateY(-70px);
+  }
+  40% {
+    -moz-transform: translateY(-60px);
+    -ms-transform: translateY(-60px);
+    -webkit-transform: translateY(-60px);
+    transform: translateY(-60px);
+  }
+  60% {
+    -moz-transform: translateY(-60px);
+    -ms-transform: translateY(-60px);
+    -webkit-transform: translateY(-60px);
+    transform: translateY(-60px);
+  }
+}
+
+.scroll-to-next {
+  cursor: pointer;
+}
+.scroll-to-next .arrow {
+  align-items: center;
+  justify-content: center;
+}
+.scroll-to-next .arrow .scroll-text {
+  text-align: center;
+  font-size: 0.5rem;
+  margin-bottom: -0.125rem;
+  width: 34px;
+}
+/* .arrow {
+  max-width: 30px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: -34px;
+  /* transform: translateY(-45px); 
+} */
+.arrow {
+  max-width: 30px;
+  flex-direction: row;
+  justify-content: center;
+  margin-bottom: -52px;
+  position: relative;
+  left: 50%;
+}
