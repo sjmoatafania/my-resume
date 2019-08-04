@@ -2,7 +2,7 @@
     "title": "Hello I'm Jalal!",
     "subtitle": "Full Stack Dev | Open Source Enthusiast ",
     "links": {
-        "github": "https://github.com/s-j-mostafania",
+        "github": "https://github.com/sjmostafania",
         "twitter": "https://twitter.com/s_j_mostafania",
         "linkedin": "https://www.linkedin.com/in/jalal-mostafania-6ab3a69a/"
     },
@@ -53,7 +53,10 @@
     
     "icons":{
         "down":"images/down.png",
-        "magicwand":"images/magicwand.png"
-    }
+        "yellowDown":"images/yellowDown.png",
+        "magicwand":"images/magicwand.png",
+        "yellowMagic":"images/yellowMagic.png"
+    },
+    "backgroundImg":"images/backFirst.jpg"
     
 } 

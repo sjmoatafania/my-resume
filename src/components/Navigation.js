@@ -1,7 +1,6 @@
 import React, { Component } from 'react'
 import { Link, Element } from 'react-scroll'
 
-import data from '../data.json'
 import './Navigation.css'
 
 
@@ -14,8 +13,8 @@ class Navigation extends Component {
                 <nav className="stiky" style={{
                     backgroundColor: "rgba(250, 250, 250, 0)"
                 }}>
-                    <div className="magic-wand magic-bounce">
-                        <img className="" src={data.icons.magicwand} alt="MagicWand" onClick={this.props.changeColorHandler} ></img>
+                    <div className="magic-wand magic-bounce" onClick={this.props.changeColorHandler} >
+                        <img className="" src={this.props.magicIcon} alt="MagicWand" ></img>
                         <div className="magic-text">Color Me</div>
                     </div>
                     <div className="menu">
@@ -27,7 +26,7 @@ class Navigation extends Component {
                             duration={500}
                             onSetActive={this.handleSetActive}>
 
-                            <div className="menu__item active">About</div>
+                            <div className="menu__item active" style={{ color: this.props.color }}>About</div>
                         </Link>
                         <Element name="about" className="element"></Element>
                         <Link activeClass="active"
@@ -38,7 +37,7 @@ class Navigation extends Component {
                             duration={500}
                             onSetActive={this.handleSetActive}>
 
-                            <div className="menu__item">Skill</div>
+                            <div className="menu__item" style={{ color: this.props.color }}>Skill</div>
                         </Link>
                         <Element name="skill" className="element"></Element>
                     </div>
