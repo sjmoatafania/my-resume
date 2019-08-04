@@ -57,6 +57,7 @@
         "magicwand":"images/magicwand.png",
         "yellowMagic":"images/yellowMagic.png"
     },
-    "backgroundImg":"images/backFirst.jpg"
-    
+    "backgroundImg":{
+        "backFirst":"images/backFirst.jpg"
+    }
 } 

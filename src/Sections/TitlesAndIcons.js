@@ -18,7 +18,8 @@ class TitlesAndIcons extends Component {
             color: "white",
             iconDown: data.icons.down,
             magicIcon: data.icons.magicwand,
-            background:"",
+            background: data.backgroundImg.backFirst,
+            backgroundColor: "darkslategrey",
             isVisible: false
         }
         this.changeColor = this.changeColor.bind(this);
@@ -29,17 +30,17 @@ class TitlesAndIcons extends Component {
             iconDown: this.state.iconDown === data.icons.yellowDown ? data.icons.down : data.icons.yellowDown,
             magicIcon: this.state.magicIcon === data.icons.magicwand ? data.icons.yellowMagic : data.icons.magicwand,
             isVisible: this.state.isVisible === false ? true : false,
-            background: data.backgroundImg.backFirst,
+            backgroundColor: this.state.backgroundColor === "darkslategrey" ? "#3498db" : "darkslategrey",
 
         })
     }
-   
+
     render() {
         let props = {
-            color:this.state.color,
-            magicIcon:this.state.magicIcon,
-            changeColorHandler:this.changeColor
-            }
+            color: this.state.color,
+            magicIcon: this.state.magicIcon,
+            changeColorHandler: this.changeColor
+        }
 
         let snow;
         if (this.state.isVisible) {
@@ -47,10 +48,10 @@ class TitlesAndIcons extends Component {
         }
         return ([
             <div>
-                <Navigation {...props}/>
+                <Navigation {...props} />
             </div>,
             <div>
-                <Fullpage className="first" style={{backgroundImage: this.state.background}}>
+                <Fullpage className="first" backgroundColor={this.state.backgroundColor}>
                     <h1 className="title" style={{ color: this.state.color }}>{data.title} </h1>
                     <div>
                         <h2 style={{ color: this.state.color }}>{data.subtitle}</h2>
