@@ -33,7 +33,7 @@ class Navigation extends Component {
                             to="skill"
                             spy={true}
                             smooth={true}
-                            offset={1260}
+                            offset={1600}
                             duration={500}
                             onSetActive={this.handleSetActive}>
 
